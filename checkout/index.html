@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <title>Mustermann E-Commerce</title>
+    <script src="checkout.mjs" type="module"></script>
+</head>
+
+<body>
+<!-- header start -->
+<header class="nav">
+    <nav class="container">
+        <ul class="nav-links">
+            <li class="nav-item logo">
+                <a href="../index.html">Mustermann</a>
+                <i class="icon material-symbols-outlined">shopping_cart</i>
+            </li>
+            <li id="logoutButton" class="nav-item">
+                <a href="../index.html">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+
+<!-- main start -->
+<main class="container">
+    <div class="checkout">
+        <table id="checkout-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Einzelpreis</th>
+                <th>Anzahl</th>
+                <th>Preis</th>
+            </tr>
+            </thead>
+            <tbody id="checkout-table-row">
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3"></td>
+                <th class="total-header">Gesamt:</th>
+                <td><span id="total"></span>€</td>
+            </tr>
+            </tfoot>
+        </table>
+        <label for="address">Lieferadresse:</label>
+        <input name="address" id="address" class="input-textarea"
+               placeholder="Am Bahnhof 1, Fulda">
+    </div>
+    <div class="bottom-cta">
+        <a href="../cart/" class="btn cta">Zurück zum Warenkorb</a>
+        <a id="confirm-purchase" class="btn cta primary-cta">Jetzt kaufen</a>
+    </div>
+</main>
+<!-- main end -->
+
+<!-- footer start -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-column">
+            <div class="footer-social-text">
+                <p>Folge uns auf:</p>
+            </div>
+            <ul class="footer-social-icons">
+                <li><a href="#"><img src="../social-icons/facebook.svg" alt="Facebook" width="16" height="16"></a></li>
+                <li><a href="#"><img src="../social-icons/instagram.svg" alt="Instagram" width="16" height="16"></a>
+                </li>
+                <li><a href="#"><img src="../social-icons/tumblr.svg" alt="Tumblr" width="16" height="16"></a></li>
+                <li><a href="#"><img src="../social-icons/twitter.svg" alt="Twitter" width="16" height="16"></a></li>
+            </ul>
+        </div>
+        <p class="footer-column">
+            Ruf uns kostenlos an: <a href="tel:+4911111111111">+49 11111 111111</a>
+        </p>
+        <form class="footer-column" onsubmit="event.preventDefault()">
+            <label for="newsletter-mail">Registriere dich für Angebote:</label>
+            <input name="mail" id="newsletter-mail" class="footer-input" aria-label="Email"
+                   placeholder="max@mustermann.de"
+                   type="email"/>
+        </form>
+        <div class="footer-copyright">
+            <p>
+                Entwickelt von Anton Pieper | Copyright 2023
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "black",
+    "name": "Schwarzes T-Shirt",
+    "price": "20",
+    "imageURL": "/data/black.jpg",
+    "category": "t-shirt"
+  },
+  {
+    "id": "cherry",
+    "name": "Kirschen T-Shirt",
+    "price": "30",
+    "imageURL": "/data/cherry.jpg",
+    "category": "t-shirt"
+  },
+  {
+    "id": "curled",
+    "name": "Geringeltes T-Shirt",
+    "price": "20",
+    "imageURL": "/data/curled.jpg",
+    "category": "t-shirt"
+  },
+  {
+    "id": "green",
+    "name": "Grüner Pullover",
+    "price": "50",
+    "imageURL": "/data/green.jpg",
+    "category": "pullover"
+  },
+  {
+    "id": "grey",
+    "name": "Graues T-Shirt",
+    "price": "15",
+    "imageURL": "/data/grey.jpg",
+    "category": "t-shirt"
+  },
+  {
+    "id": "stripes",
+    "name": "Gestreiftes T-Shirt",
+    "price": "40",
+    "imageURL": "/data/stripes.jpg",
+    "category": "t-shirt"
+  },
+  {
+    "id": "white",
+    "name": "Weißes T-Shirt",
+    "price": "60",
+    "imageURL": "/data/white.jpg",
+    "category": "t-shirt"
+  }
+]
